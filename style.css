@@ -160,9 +160,13 @@ a {
 
 /* Expertise */
 .skills_list {
-	margin-top: 1rem;
-	margin-left: 2rem;
-	line-height: 2;
+	list-style: none; /* Remove bullet points */
+	padding: 0;
+}
+.skills_list li {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
 }
 
 /* Ref  */
@@ -186,6 +190,11 @@ a {
 /* exp */
 .exp_item {
 	margin-top: 2rem;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
 }
 
 /* awards */
