@@ -164,9 +164,9 @@ a {
 	padding: 0;
 }
 .skills_list li {
-display: flex;
-align-items: center;
-margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
 }
 
 /* Ref  */
