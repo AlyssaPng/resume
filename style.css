@@ -246,6 +246,9 @@ a {
 /* cca */
 .cca_item {
 	margin-top: 2rem;
+	background-color: #e8f4f8;
+	padding: 5px;
+	border-radius: 2%;
 }
 .cca_description {
 	margin-top: 1rem;
@@ -335,7 +338,7 @@ a {
 .social_item svg {
 	width: 2rem;
 }
-/*section*/
+/*astar.css*/
 .astar-container{
 	max-width: 900px;
 	margin: 0 auto;
@@ -369,10 +372,21 @@ a {
   line-height: 1.6;
   text-align: center;
 }
+.astar_icon{
+	font-size: 2rem;
+	gap: 2rem;
+	align-items: center;
+	color: var(--text-color);
+}
+.astar_icon img {
+	margin-top: 10px;
+	width: 8%;
+	height:	auto;
+}
 .astar_section2	{
 	align-items: center;
 	padding: 20px;
-	background-color: #13dcff;
+	background-color: #e8f4f8;
 	border-radius: 2%;
 	gap: 20px;
 	margin-top: 10px;
@@ -425,6 +439,8 @@ a {
 	object-fit: cover;
 	border-radius: 8px;
 }
+/*tym.css*/
+
 
 hr {
 	grid-column: 1/-1;
