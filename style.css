@@ -189,6 +189,16 @@ a {
 .downloadBtn:hover {
 	color: var(--primary-color);
 }
+.learnBtn {
+	display: inline-block;
+	padding-top: 10px;
+	color: black;
+	font-size: 1.5rem;
+}
+.learnBtn:hover {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
 @media only screen and (max-width: 768px) {
 	.profile_container {
 		flex-direction: column;
@@ -249,6 +259,9 @@ a {
 /* exp */
 .exp_item {
 	margin-top: 2rem;
+	background-color: #f0f0f0;
+	padding: 5px;
+	border-radius: 2%;
 }
 .exp_description {
 	margin-top: 1rem;
