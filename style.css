@@ -177,19 +177,50 @@ a {
 	font-size: 1.6rem;
 	font-weight: 700;
 }
+.tech_stack {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.proj_icon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 5px; 
+    border-radius: 20%; 
+    background-color: #f0f0f0; 
+    padding: 5px; 
+}
 
 /* eduction */
 .edu_item {
 	margin-top: 2rem;
 }
 
-/* certification */
-.certification_item {
+/* cca */
+.cca_item {
 	margin-top: 2rem;
+}
+.cca_description {
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+	display: grid;
+	grid-row-gap: 5px;
 }
 /* exp */
 .exp_item {
 	margin-top: 2rem;
+}
+.exp_description {
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+	display: grid;
+	grid-row-gap: 5px;
 }
 .icon {
 	width: 30px;
@@ -200,6 +231,19 @@ a {
 /* awards */
 .awards_item {
 	margin-top: 2rem;
+}
+.certificate_button {
+	display: inline-block;
+	padding: 8px 10px;
+	background-color: var(--primary-color);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	margin-top: 1rem;
+	font-size: small;
+}  
+.certificate_button:hover {
+	background-color: #0056b3;
 }
 /* Interests */
 .interest_items {
