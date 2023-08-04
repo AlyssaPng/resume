@@ -439,6 +439,14 @@ a {
 	object-fit: cover;
 	border-radius: 8px;
 }
+@media only screen and (max-width: 768px) {
+	.astarcontainer {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+	}
+}
 /*tym.css*/
 
 
