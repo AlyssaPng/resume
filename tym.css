@@ -59,6 +59,20 @@ a {
 	text-decoration: none;
 	color: black;
 }
+.pdf-icon,
+.ppt-icon {
+  font-size: 2rem;
+  gap: 2rem;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.pdf-icon img,
+.ppt-icon img {
+  margin-top: 10px;
+  width: 8%;
+  height: auto;
+}
 .tym_container {
 	max-width: 1000px;
 	width: 100%;
