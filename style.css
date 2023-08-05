@@ -153,12 +153,17 @@ a {
 	background-color: bisque;
 	padding: 30px;
 	align-items: center;
+	gap: 2rem;
+}
+.profile_about {
 	display: flex;
 	gap: 2rem;
+	align-items: center;
 }
 .profile_profileImg {
 	width: 600px;
   	height: auto;
+	border-radius: 2%;
 }
 .profile_name_firstName {
 	color: black;
@@ -184,6 +189,7 @@ a {
 	color: black;
 	font-size: 1.6rem;
 	margin-top: 1rem;
+	text-align: right;
 }
 .downloadBtn:hover {
 	color: var(--primary-color);
@@ -218,6 +224,8 @@ a {
 /* Ref  */
 .project_item {
 	margin-top: 2rem;
+	padding: 5px;
+	border-radius: 2%;
 }
 .project_name {
 	font-size: 1.6rem;
@@ -240,6 +248,8 @@ a {
 /* eduction */
 .edu_item {
 	margin-top: 2rem;
+	padding: 5px;
+	border-radius: 2%;
 }
 
 /* cca */
@@ -283,6 +293,9 @@ a {
 /* awards */
 .awards_item {
 	margin-top: 2rem;
+	padding: 5px;
+	border-radius: 2%;
+	background-color: #ebe8fc
 }
 .certificate_button {
 	display: inline-block;
