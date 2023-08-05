@@ -224,8 +224,6 @@ a {
 /* Ref  */
 .project_item {
 	margin-top: 2rem;
-	padding: 5px;
-	border-radius: 2%;
 }
 .project_name {
 	font-size: 1.6rem;
@@ -248,14 +246,12 @@ a {
 /* eduction */
 .edu_item {
 	margin-top: 2rem;
-	padding: 5px;
-	border-radius: 2%;
 }
 
 /* cca */
 .cca_item {
 	margin-top: 2rem;
-	background-color: #e8f4f8;
+	background-color: #ebe8fc;
 	padding: 5px;
 	border-radius: 2%;
 }
@@ -295,7 +291,7 @@ a {
 	margin-top: 2rem;
 	padding: 5px;
 	border-radius: 2%;
-	background-color: #ebe8fc
+	background-color: #e8f4f8;
 }
 .certificate_button {
 	display: inline-block;
