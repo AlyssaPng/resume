@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: #13dcff;
+	--text-color: #727171;
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-family: Inter, sans-serif;
+	background-color: white;
+	color: black;
+}
+.navbar {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #727171;
+	border-radius: 8px;
+	font-size: 0;
+}
+.navbar ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	display: flex;
+}
+.navbar li {
+	margin-right: 10px;
+}
+.navbar a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 10px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+.navbar a:hover {
+	color: #13dcff;
+}
+/* common styles */
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.fyp_container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem;
+	background: white;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+.fyp_title {
+	font-size: 2rem;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+	justify-self: center;
+}
+.tech_stack {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.proj_icon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 5px; 
+    border-radius: 20%; 
+    background-color: #f0f0f0; 
+    padding: 5px; 
+}
+.aim {
+	margin-top: 2rem;
+	background-color: #ebe8fc;
+	border-radius: 1%;
+	padding: 20px;
+	align-items: center;
+}
+.aim p {
+	flex-wrap: 15px;
+	font-weight: 400;
+	color: var(--text-color);
+}
+.arch {
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.video-container {
+    max-width: 800px;
+    margin-top: 5px;
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+	border-radius: 1%;
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+.info {
+	margin-top: 2rem;
+	background-color: #ebe8fc;
+	border-radius: 1%;
+	padding: 20px;
+	align-items: center;
+}
+.info p {
+	flex-wrap: 15px;
+	font-weight: 400;
+	color: var(--text-color);
+	margin-bottom: 20px;
+}
+.pdf-icon,
+.ppt-icon {
+  font-size: 2rem;
+  gap: 2rem;
+  align-items: center;
+  color: var(--primary-color);
+}
+.pdf-icon img,
+.ppt-icon img {
+  margin-top: 10px;
+  width: 8%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .tym-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+  }
+}

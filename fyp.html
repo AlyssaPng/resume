@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>The Young Makers</title>
+  <!-- Link your CSS file here -->
+  <link rel="stylesheet" href="fyp.css">
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tym.html">The Young Makers</a></li>
+    <li><a href="astar.html">A*STAR Internship</a></li>
+    <li><a href="fyp.html">Projects</a></li>
+  </ul>
+</nav>
+<body>
+  <div class="fyp_container">
+    <div>
+      <h1 class="fyp_title">
+        Augmented Telepresence Robot
+      </h1>
+      <div class="tech_stack">
+        <img src="./logo/vue.js_logo.png" alt="Vue Icon" class="proj_icon">
+        <img src="./logo/raspberrypi_logo.png" alt="Raspberry pi Icon" class="proj_icon">
+        <img src="./logo/aws_logo.png" alt="AWS Icon" class="proj_icon">
+      </div>
+      <div class="aim">
+        <p>
+          During the culmination of my polytechnic journey, I undertook a significant endeavor known as the Final Year Project, an integral component of my diploma pursuit. Collaborating alongside my partner, Esther Yap Shi Ting, we embarked on the creation, programming, and refinement of an Augmented Telepresence Robot, skillfully integrating the capabilities of Raspberry Pi and a range of Amazon Web Services. We were tasked to improve this project from previous batches by incorporating audio to our video streaming and also allow our website to be hosted on the hosted the wide-area network. 
+          <br><br>
+          The aim of this project is to incorporate Augmented Reality to telepresence technology in hopes to provide users with a better sense of immersion in the simulated world using an EPSON BT-350 smart glasses. The movement and video captured on the Telepresence Robot can be remotely controlled by an authenticated user via a website. As seen from the video, different users will only have access to their respective robots. 
+        </p>
+      </div>
+    <div class="video-container">
+        <video controls>
+          <source src="./fyp/IMG_2544.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="info">
+      <p>
+        With the help of Vue.js and AWS Cognito, the layout and authentication of the Website was constructed using JavaScript. This website was hosted the wide-area network using AWS S3 and CloudFront, allowing users from anywhere with internet to access their robots. The movement of the robot was controlled using specific messages send from the website to AWS IoT Core MQTT topic via AWS API Gateway and Lambda. On the other hand, video and audio streaming from the robot was achieved using AWS Kinesis Video Streams with Real-Time Communication (WebRTC).
+      </p>
+      <img src="./fyp/arch_frame.png" alt="Architecture Diagram" class="arch">
+      <p>
+        I assumed the pivotal role of programming the Python script embedded within the robot. My responsibilities encompassed configuring the robot as an AWS IoT device, facilitating seamless connectivity. Moreover, I successfully integrated video and audio streaming onto AWS Kinesis Video, using the correct credentials. To delve deeper into the intricacies of our project, including the obstacles faced, I invite you to explore our comprehensive Final Report and Presentation.
+      </p>
+      <a href="./fyp/PD15FinalReport_YapShiTingEsther_AlyssaPngKaiWen_commented.pdf" target="_blank" class="pdf-icon">
+        <img src="./logo/pdf.png" alt="PDF icon">
+      </a>
+      <a href="https://docs.google.com/presentation/d/1ZM526JkBb6KJMxOccvomPnng6XW-IKwI38LCUQploeI/edit?usp=sharing" target="_blank" class="ppt-icon">
+        <img src="./logo/ppt.png" alt="PPT icon">
+      </a>
+    </div>
+  </div>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
