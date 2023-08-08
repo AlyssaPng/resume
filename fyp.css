@@ -68,6 +68,7 @@ a {
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 	align-items: center;
+	justify-content: center;
 }
 .fyp_title {
 	font-size: 2rem;
@@ -100,6 +101,7 @@ a {
 	flex-wrap: 15px;
 	font-weight: 400;
 	color: var(--text-color);
+	font-size: 15px;
 }
 .arch {
 	border-radius: 5px;
@@ -131,6 +133,7 @@ a {
 	font-weight: 400;
 	color: var(--text-color);
 	margin-bottom: 20px;
+	font-size: 15px;
 }
 .pdf-icon,
 .ppt-icon {
