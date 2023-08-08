@@ -1,24 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Variables */
 :root {
-	--primary-color: #13dcff;
-	--text-color: #727171;
+    --primary-color: #13dcff;
+    --text-color: #727171;
 }
+
+/* Typography */
 html {
-	font-size: 10px;
+    font-size: 62.5%; /* 1rem = 10px */
 }
+
 body {
-	font-family: Inter, sans-serif;
-	background-color: white;
-	color: black;
-	justify-content: center;
-    align-items: center;
+    font-family: Inter, sans-serif;
+    background-color: white;
+    color: black;
 }
+
+/* Layout */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navbar */
 .navbar {
 	margin: 27px auto 0;
 	position: relative;
@@ -53,105 +65,117 @@ body {
 .navbar a:hover {
 	color: #13dcff;
 }
-/* common styles */
-img {
-	width: 100%;
-}
-a {
-	text-decoration: none;
-	color: black;
-}
+
+/* Section: FYP Container */
 .fyp_container {
+    padding: 5rem;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
 	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 5rem;
-	background: white;
-	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
-	align-items: center;
-	justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
+
 .fyp_title {
-	font-size: 2rem;
-	color: black;
-	font-weight: 600;
-	margin-bottom: 0.8rem;
-	justify-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-align: center;
 }
+
 .tech_stack {
     display: flex;
     align-items: center;
+	justify-content: center;
     margin-top: 10px;
 }
+
 .proj_icon {
-    width: 40px; 
-    height: 40px; 
-    margin-right: 5px; 
-    border-radius: 20%; 
-    background-color: #f0f0f0; 
-    padding: 5px; 
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    border-radius: 20%;
+    background-color: #f0f0f0;
+    padding: 5px;
 }
+
+/* Section: AIM */
 .aim {
-	margin-top: 2rem;
-	background-color: #ebe8fc;
-	border-radius: 1%;
-	padding: 20px;
-	align-items: center;
+    margin-top: 2rem;
+    background-color: #ebe8fc;
+    border-radius: 1%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
+
 .aim p {
-	flex-wrap: 15px;
-	font-weight: 400;
-	color: var(--text-color);
-	font-size: 15px;
+    flex-wrap: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1.5rem;
 }
-.arch {
-	border-radius: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
+
+/* Video Container */
 .video-container {
     max-width: 800px;
-    margin-top: 5px;
-    text-align: center; /* Center the video horizontally */
+    margin: 2rem auto; /* Adjust margin as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .video-container video {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 1%;
 }
+
+/* Section: Info */
 .info {
-	margin-top: 2rem;
-	background-color: #ebe8fc;
-	border-radius: 1%;
-	padding: 20px;
-	align-items: center;
+    margin-top: 2rem;
+    background-color: #ebe8fc;
+    border-radius: 1%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
 .info p {
-	flex-wrap: 15px;
-	font-weight: 400;
-	color: var(--text-color);
-	margin-bottom: 20px;
-	font-size: 15px;
+    flex-wrap: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
+
+/* PDF and PPT Icons */
 .pdf-icon,
 .ppt-icon {
-  font-size: 2rem;
-  gap: 2rem;
-  align-items: center;
-  color: var(--primary-color);
+    font-size: 2rem;
+    gap: 2rem;
+    align-items: center;
+    color: var(--primary-color);
+    display: flex;
 }
+
 .pdf-icon img,
 .ppt-icon img {
-  margin-top: 10px;
-  width: 8%;
-  height: auto;
+    margin-top: 10px;
+    width: 8%;
+    height: auto;
 }
+
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
-  .tym-container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 3rem;
-    gap: 7rem;
-  }
+    .fyp_container {
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
 }
