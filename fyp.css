@@ -23,13 +23,6 @@ body {
     color: black;
 }
 
-/* Layout */
-.container {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* Navbar */
 .navbar {
 	margin: 27px auto 0;
@@ -68,16 +61,15 @@ body {
 
 /* Section: FYP Container */
 .fyp_container {
-    padding: 5rem;
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
-	max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem;
+	background: white;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .fyp_title {
@@ -124,9 +116,9 @@ body {
 .video-container {
     max-width: 800px;
     margin: 2rem auto; /* Adjust margin as needed */
-    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .video-container video {
@@ -135,13 +127,18 @@ body {
     border-radius: 1%;
 }
 
+.video-container p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
 /* Section: Info */
 .info {
     margin-top: 2rem;
     background-color: #ebe8fc;
     border-radius: 1%;
     padding: 20px;
-    display: flex;
     align-items: center;
     flex-direction: column;
 }
@@ -150,32 +147,39 @@ body {
     flex-wrap: 15px;
     font-weight: 400;
     color: var(--text-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.5rem;
+}
+
+.info img {
+	width: 100%;
+	height: auto;
+	border-radius: 1%;
+	margin-bottom: 10px;
 }
 
 /* PDF and PPT Icons */
 .pdf-icon,
 .ppt-icon {
-    font-size: 2rem;
-    gap: 2rem;
-    align-items: center;
-    color: var(--primary-color);
-    display: flex;
+	font-size: 2rem;
+	gap: 2rem;
+	align-items: center;
+	color: var(--primary-color);
 }
 
 .pdf-icon img,
 .ppt-icon img {
-    margin-top: 10px;
-    width: 8%;
-    height: auto;
+	margin-top: 10px;
+	width: 8%;
+	height: auto;
 }
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .fyp_container {
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
-    }
+	.fyp_container {
+	  width: 100%;
+	  grid-template-columns: 1fr;
+	  padding: 3rem;
+	  gap: 7rem;
+	}
 }
