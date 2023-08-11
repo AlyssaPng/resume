@@ -131,6 +131,13 @@ body {
   text-align: center;
 }
 
+.article {
+	text-decoration: underline;
+	color: black;
+}
+.article:hover {
+	color: var(--primary-color);
+}
 .pdf-icon,
 .ppt-icon {
   font-size: 2rem;
